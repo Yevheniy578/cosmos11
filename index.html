@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Космос та інопланетяни</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="audio/space-music.mp3" type="audio/mp3" />
+      Ваш браузер не підтримує аудіо.
+    </audio>
+
+    <header>
+      <h1>Вітаємо у світі Космосу та Інопланетян</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="space.html">Космос</a></li>
+          <li><a href="aliens.html">Інопланетяни</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p>
+        Цей сайт присвячений дослідженню космосу, загадкам Всесвіту та можливому
+        існуванню позаземного життя.
+      </p>
+      <img
+        src="imaga/inoplonet.jpg"
+        alt="Карта космосу"
+        usemap="#spaceMap"
+        width="600"
+      />
+      <map name="spaceMap">
+        <area
+          shape="rect"
+          coords="50,50,200,200"
+          href="space.html"
+          alt="Планети"
+        />
+        <area
+          shape="circle"
+          coords="400,150,50"
+          href="aliens.html"
+          alt="Інопланетяни"
+        />
+      </map>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Дослідники Всесвіту (Байваровський, Криницький)</p>
+    </footer>
+  </body>
+</html>

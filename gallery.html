@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Галерея</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .gallery img {
+        width: 250px;
+        border: 2px solid #444;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: opacity 0.5s ease;
+      }
+
+      .caption {
+        text-align: center;
+        margin-top: 5px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Галерея Космосу та Інопланетян</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="space.html">Космос</a></li>
+          <li><a href="aliens.html">Інопланетяни</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="gallery">
+        <div>
+          <img src="imaga/planety.jpg" alt="Планета" onclick="toggle(this)" />
+          <div class="caption"><a href="space.html">Далека планета</a></div>
+        </div>
+        <div>
+          <img src="imaga/Nlo.jpg" alt="НЛО" onclick="toggle(this)" />
+          <div class="caption"><a href="aliens.html">Невідомий об'єкт</a></div>
+        </div>
+        <div>
+          <img
+            src="imaga/Galactyc.jpg"
+            alt="Галактика"
+            onclick="toggle(this)"
+          />
+          <div class="caption">
+            <a href="space.html">Спіральна галактика</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Дослідники Всесвіту (Байваровський, Криницький)</p>
+    </footer>
+
+    <script>
+      function toggle(img) {
+        img.style.opacity = img.style.opacity == "0.3" ? "1" : "0.3";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Інопланетяни</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .alien-img {
+        width: 200px;
+        transition: transform 0.5s ease;
+      }
+
+      .alien-img:hover {
+        transform: scale(1.2);
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #555;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #222;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Таємниці інопланетян</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="space.html">Космос</a></li>
+          <li><a href="aliens.html">Інопланетяни</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p>
+        Протягом багатьох років люди спостерігали за загадковими явищами, що
+        пов'язують із позаземними істотами.
+      </p>
+
+      <h2>Відомі типи інопланетян:</h2>
+      <table>
+        <tr>
+          <th>Назва</th>
+          <th>Опис</th>
+          <th>Зображення</th>
+        </tr>
+        <tr>
+          <td>Сірі</td>
+          <td>Маленькі, з великими головами та чорними очима</td>
+          <td>
+            <img src="imaga/gray.jpg" alt="Сірий" class="alien-img" />
+          </td>
+        </tr>
+        <tr>
+          <td>Рептилоїди</td>
+          <td>Схожі на рептилій, часто пов'язують з теоріями змов</td>
+          <td>
+            <img src="imaga/repty.jpg" alt="Рептилоїд" class="alien-img" />
+          </td>
+        </tr>
+      </table>
+
+      <button onclick="showAlert()">Натисни, якщо віриш в інопланетян</button>
+      <button onclick="showAlert(1)">
+        Натисни, якщо не віриш в інопланетян
+      </button>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Дослідники Всесвіту (Байваровський, Криницький)</p>
+    </footer>
+
+    <script>
+      function showAlert() {
+        alert("Ти не один такий! Багато людей вірять у позаземне життя.");
+      }
+    </script>
+    <script>
+      function showAlert(1) {
+        alert("Ти не один такий! Багато людей не вірять у позаземне життя.");
+      }
+    </script>
+  </body>
+</html>
